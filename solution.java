@@ -1,11 +1,12 @@
-import java.util.Scanner;
+private static int divide(int dividend, int divisor) {
+        if (divisor == 0) {
+            throw new IllegalArgumentException("Divisor cannot be zero.");
+        }
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter dividend:");
-        int dividend = scanner.nextInt();
-        System.out.println("Enter divisor:");
-        int divisor = scanner.nextInt();
+        if (dividend < divisor) {
+            return 0;
+        }
+
+        int quotient = 1;
+        int tempDivisor = divisor;
     }
-}
